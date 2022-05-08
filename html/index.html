@@ -22,22 +22,74 @@
     </header>
 
     <div class="form-content">
+        <!-- UC2 Add form header -->
+        <form class="form" action="#">
+            <div class="form-head">
+                <div class="form-heading">PERSON ADDRESS FORM</div>
+                <div class="cancel-button">
+                    &times
+                </div>
+            </div>
+            <!-- UC3 Form input field -->
+            <div class="form-start">
+                <div class="row-content">
+                    <label class="label text" for="name">Full Name</label><br>
+                    <input class="input" type="text" id="name" name="name" placeholder="Enter your name... " required>
+                    <error-output class="text-error"></error-output>
+                </div>
+                <div class="row-content">
+                    <label class="label text" for="phone">Phone Number</label><br>
+                    <input class="input" type="tel " id="phone " name="phone" placeholder="Enter your phone number..." required>
+                    <error-output class="phone-error"></error-output>
+                </div>
+                <div class="row-content">
+                    <label class="label text" for="address">Address</label><br>
+                    <textarea id="address" class="input" name="address" placeholder="Enter your address... " style="height: 100px; "></textarea>
+                </div>
+                <div class="column-content">
+                    <div>
+                        <label class="label text" for="city">City</label><br>
+                        <select id="city" name="city">
+                        <option aria-placeholder="Select City">Select City</option>
+                        <option value="1">Pune</option>
+                        <option value="2">Hyderabad</option>
+                        <option value="3">Mumbai</option>
+                        <option value="4">Banglore</option>
+                        <option value="5">Delhi</option>
+                        <option value="6">Kochi</option>
+                        <option value="7">Vijayawada</option>
+                        <option value="8">Kolkata</option>
+                    </select>
+                    </div>
+                    <div>
+                        <label class="label text" for="state">State</label><br>
+                        <select id="state" name="state ">
+                            <option value="">Select State</option>
+    
+                            <option value="MH">Maharastra</option>
+                            <option value="AP">Andhra Pradesh</option>
+                            <option value="TS">Telangana</option>
+                            <option value="KN">Karnataka</option>
+                            <option value="ND">New Delhi</option>
+                            <option value="KR">Kerala</option>
+                            <option value="WB">West Bengal</option>
+                    </select>
+                    </div>
+                    <div>
+                        <label class="label text zip-text" for="zipcode ">Zipcode</label></br>
+                        <input class="input" id="zipcode " name="zipcode"></input>
+                    </div>
+                </div>
 
+                <div class="buttonParent">
+                    <div class="">
+                        <button type="submit" class="button addButton" id="addButton">Add</button>
+                        <button type="reset" class="resetButton button">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
-</body>
-
-</html>
-
- <!-- UC2 Add form header -->
- <form class="form">
-    <div class="form-head">
-        <div class="form-heading">PERSON ADDRESS FORM</div>
-        <div class="cancel-button">
-            &times
-        </div>
-    </div>
-</form>
-</div>
 </body>
 
 </html>
