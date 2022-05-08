@@ -1,0 +1,54 @@
+/* UC1*/
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.header {
+    padding: 15px 0px;
+    background-color: #ffffff;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid #E2E2E2;
+}
+
+.logo-content {
+    display: flex;
+    width: 85%;
+    align-items: center;
+    border: 0px solid blue;
+}
+
+.logo-content img {
+    margin-right: 0.5%;
+}
+
+.add-text {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #008CFF;
+}
+
+.add-book {
+    color: #42515F;
+}
+
+.form-content {
+    min-height: calc(100% - 80px);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #f7f7f7;
+    align-items: center;
+}
