@@ -26,7 +26,6 @@ body {
     display: flex;
     width: 85%;
     align-items: center;
-    border: 0px solid blue;
 }
 
 .logo-content img {
@@ -92,11 +91,13 @@ body {
     cursor: pointer;
     float: right;
     margin-right: 40px;
+    margin-top: 10px;
     background: #FFFFFF;
     opacity: 1;
     color: #008CFF;
-    height: 44px;
-    padding: 8px;
+    height: 30px;
+    width: 30px;
+    padding: 4px;
     text-align: center;
 }
 
