@@ -23,7 +23,7 @@ function validName() {
 function validPhoneNumber() {
     const phoneNumber = document.querySelector('#phone');
     const phoneError = document.querySelector('.phone-error');
-    phone.addEventListener('input', function() {
+    phoneNumber.addEventListener('input', function() {
         const phoneRegex = RegExp('^[0-9]{10}$');
         if (phoneRegex.test(phoneNumber.value)) {
             phoneError.textContent = "";
