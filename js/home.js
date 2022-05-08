@@ -44,18 +44,18 @@ const createInnerHTML = () => {
     document.querySelector('#display').innerHTML = innerHtml;
 }
 
-// //UC5-Remove data
-// const remove = (data) => {
-//     let deletePerson = addressBookList.find(contactData => contactData._id == data.id);
-//     if (!deletePerson)
-//         return;
-//     const index = addressBookList.map(contactData => contactData._id).indexOf(deletePerson._id);
-//     addressBookList.splice(index, 1);
-//     localStorage.setItem('AddressBookList', JSON.stringify(addressBookList));
-//     document.querySelector(".person-count").textContent = addressBookList.length;
-//     createInnerHTML();
-//     alert("Person data deleted successfully..!");
-// }
+//UC5-Remove data
+const remove = (data) => {
+    let deletePerson = addressBookList.find(contactData => contactData._id == data.id);
+    if (!deletePerson)
+        return;
+    const index = addressBookList.map(contactData => contactData._id).indexOf(deletePerson._id);
+    addressBookList.splice(index, 1);
+    localStorage.setItem('AddressBookList', JSON.stringify(addressBookList));
+    document.querySelector(".person-count").textContent = addressBookList.length;
+    createInnerHTML();
+    alert("Person data deleted successfully..!");
+}
 
 // //UC6 -Update data
 // const update = (data) => {
