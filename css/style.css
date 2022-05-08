@@ -1,40 +1,54 @@
+/* UC1*/
 
-<!DOCTYPE html>
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
 
+body {
+    margin: 0;
+    height: 100%;
+}
 
-<html lang="en">
+.header {
+    padding: 15px 0px;
+    background-color: #ffffff;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Address Book App</title>
-</head>
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid #E2E2E2;
+}
 
-<body>
-    <!-- UC1 AddressBook Form UI-->
-    <header class="header-content header">
-        <div class="logo-content">
-            <img src="../assets/logo.jpg">
-            <div>
-                <span class="add-text">ADDRESS</span><br>
-                <span class="add-text add-book">BOOK</span>
-            </div>
-        </div>
-    </header>
+.logo-content {
+    display: flex;
+    width: 85%;
+    align-items: center;
+    border: 0px solid blue;
+}
 
-    <div class="form-content">
-        <!-- UC2 Add form header -->
-        <form class="form">
-            <div class="form-head">
-                <div class="form-heading">PERSON ADDRESS FORM</div>
-                <div class="cancel-button">
-                    &times
-                </div>
-            </div>
-        </form>
-    </div>
-</body>
+.logo-content img {
+    margin-right: 0.5%;
+}
 
-</html>
+.add-text {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #008CFF;
+}
+
+.add-book {
+    color: #42515F;
+}
+
+.form-content {
+    min-height: calc(100% - 80px);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #f7f7f7;
+    align-items: center;
+}
