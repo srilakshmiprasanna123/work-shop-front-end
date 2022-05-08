@@ -1,41 +1,46 @@
 /*UC7 getter setter form validation and to string method  */
 class AddressBookData {
+    get id() {
+        return this._id;
+    }
+    set id(id) {
+        this._id = id;
+    }
 
     get name() {
         return this._name;
     }
     set name(name) {
-        let nameRegex = RegExp('^([A-Z]{1}[a-z]{2,}.)+$');
-        if (nameRegex.test(name))
+        const nameRegex = RegExp('^[A-Z]{1}[a-z]{2,}$');
+        if (nameRegex.test(name)) {
             this._name = name;
-        else throw "Name is Incorrect";
+        } else {
+            throw "First letter capital - minimum 3 character allowed";
+
+        }
+    }
+    get phone() {
+        return this._phone;
+    }
+    set phone(phone) {
+        const phoneRegex = RegExp('^[+][1-9]{2}[-][0-9]{10}$');
+        if (phoneRegex.test(phone)) {
+            this._phone = phone;
+        } else {
+            throw "Phone number format (Ex:+91-1234567890)";
+        }
     }
 
     get address() {
         return this._address;
     }
     set address(address) {
-        let addressRegex = RegExp('^([A-Za-z0-9/.,-]{3,}.)+$')
-        if (addressRegex.test(address))
+        const addressRegex = RegExp('^([A-Za-z0-9/.,-]{3,}.)+$');
+        if (addressRegex.test(address)) {
             this._address = address;
-        else throw "Invalid Address"
-    }
-
-    get phoneNumber() {
-        return this._phoneNumber;
-    }
-    set phoneNumber(phoneNumber) {
-        let phoneRegex = RegExp("^[0-9]{10}$")
-        if (phoneRegex.test(phoneNumber))
-            this._phoneNumber = phoneNumber;
-        else throw "Invalid Phone Number"
-    }
-
-    get city() {
-        return this._city;
-    }
-    set city(city) {
-        this._city = city;
+        } else {
+            throw "Invalid address - minimum 3 character";
+        }
     }
 
     get state() {
@@ -45,11 +50,11 @@ class AddressBookData {
         this._state = state;
     }
 
-    get id() {
-        return this._id;
+    get city() {
+        return this._city;
     }
-    set id(id) {
-        this._id = id;
+    set city(city) {
+        this._city = city;
     }
 
     get zipcode() {
